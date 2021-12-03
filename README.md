@@ -1,20 +1,20 @@
-<p align="center"><a href="https://t.me/Miss_Akshi2_0_bot"><img src="https://github.com/darkphoenix2601/video_stream/blob/main/driver/Akshilogo.png"></a></p>
+<p align="center"><a href="https://t.me/Miss_Akshi2_0_bot"><img src="https://github.com/darkphoenix2601/M.V._PLAYER/blob/main/driver/Akshilogo.png"></a></p>
 <p align="center">
     <br><b>Video Stream is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
 </p>
 <p align="center">
     <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>
-    <a href="https://github.com/darkphoenix2601/video_stream/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-red.svg?style=flat-square" /></a>
-    <a href="https://app.codacy.com/gh/darkphoenix2601/video_stream/dashboard"> <img src="https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=red&logo=codacy&style=flat-square" alt="Codacy" /></a><br>
-    <a href="https://github.com/darkphoenix2601/video_stream"> <img src="https://img.shields.io/github/repo-size/darkphoenix2601/video_stream?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
-    <a href="https://github.com/darkphoenix2601/video_stream/commits/main"> <img src="https://img.shields.io/github/last-commit/darkphoenix2601/video_stream?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
-    <a href="https://github.com/darkphoenix2601/video_stream/issues"> <img src="https://img.shields.io/github/issues/darkphoenix2601/video_stream?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
-    <a href="https://github.com/darkphoenix2601/video_stream/network/members"> <img src="https://img.shields.io/github/forks/darkphoenix2601/video_stream?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
-    <a href="https://github.com/darkphoenix2601/video_stream/network/members"> <img src="https://img.shields.io/github/stars/darkphoenix2601/video_stream?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
+    <a href="https://github.com/darkphoenix2601/M.V._PLAYER/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-red.svg?style=flat-square" /></a>
+    <a href="https://app.codacy.com/gh/darkphoenix2601/M.V._PLAYER/dashboard"> <img src="https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=red&logo=codacy&style=flat-square" alt="Codacy" /></a><br>
+    <a href="https://github.com/darkphoenix2601/M.V._PLAYER"> <img src="https://img.shields.io/github/repo-size/darkphoenix2601/M.V._PLAYER?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
+    <a href="https://github.com/darkphoenix2601/M.V._PLAYER/commits/main"> <img src="https://img.shields.io/github/last-commit/darkphoenix2601/M.V._PLAYER?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
+    <a href="https://github.com/darkphoenix2601/M.V._PLAYER/issues"> <img src="https://img.shields.io/github/issues/darkphoenix2601/M.V._PLAYER?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
+    <a href="https://github.com/darkphoenix2601/M.V._PLAYER/network/members"> <img src="https://img.shields.io/github/forks/darkphoenix2601/M.V._PLAYER?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
+    <a href="https://github.com/darkphoenix2601/M.V._PLAYER/network/members"> <img src="https://img.shields.io/github/stars/darkphoenix2601/M.V._PLAYER?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
 </p>
 
 ## 📊 Stats
-[![CodeFactor](https://www.codefactor.io/repository/github/darkphoenix2601/video_stream/badge?s=2819e7433cdffbf7f3170b7a8234935da454d37b)](https://www.codefactor.io/repository/github/darkphoenix2601/video_stream)
+[![CodeFactor](https://www.codefactor.io/repository/github/darkphoenix2601/M.V._PLAYER/badge?s=2819e7433cdffbf7f3170b7a8234935da454d37b)](https://www.codefactor.io/repository/github/darkphoenix2601/M.V._PLAYER)
 
 ## 🧪 Get `SESSION_NAME` from below:
 
