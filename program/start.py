@@ -92,6 +92,7 @@ async def text_(client: Client, message: Message):
     )
 @Client.on_message(
     command(["alive", f"alive@{BOT_USERNAME}"]) & filters.private & ~filters.edited
+)
 async def alive(client: Client, message: Message):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
