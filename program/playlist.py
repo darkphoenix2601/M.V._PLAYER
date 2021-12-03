@@ -1,6 +1,4 @@
-# Copyright (C) 2021 By Veez Music-Project
-# Commit Start Date 20/10/2021
-# Finished On 28/10/2021
+# Copyright (C) 2021 By M.V.PLAYER
 
 from config import BOT_USERNAME
 from pyrogram.types import (
