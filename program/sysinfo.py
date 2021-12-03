@@ -1,4 +1,4 @@
-# Copyright (C) 2021 Veez Project
+# Copyright (C) 2021 By M.V.PLAYER
 
 import re
 import uuid
