@@ -12,9 +12,13 @@
     <a href="https://github.com/darkphoenix2601/M.V._PLAYER/network/members"> <img src="https://img.shields.io/github/forks/darkphoenix2601/M.V._PLAYER?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
     <a href="https://github.com/darkphoenix2601/M.V._PLAYER/network/members"> <img src="https://img.shields.io/github/stars/darkphoenix2601/M.V._PLAYER?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
     <a href="https://github.com/darkphoenix2601/M.V._PLAYER/graphs/contributors" alt="GitHub contributors"> <img src="https://img.shields.io/github/contributors/darkphoenix2601/M.V._PLAYER?style=flat&logo=github" /> </a>
-    <a href="https://github.com/darkphoenix2601/M.V._PLAYER/pulls" alt="GitHub closed pull requests"> <img src="https://img.shields.io/github/issues-pr-closed-rawdarkphoenix2601/M.V._PLAYER?color=success" /> </a>
-    <a href="https://github.com/darkphoenix2601/M.V._PLAYER/releases" alt="GitHub release (latest by date including pre-releases)"> <img src="https://img.shields.io/github/releases/darkphoenix2601/M.V._PLAYER?include_prereleases?style=flat&logo=github" /> </a>
-</p>
+    <a href="https://github.com/darkphoenix2601/M.V._PLAYER/pulls" alt="GitHub closed pull requests"> <img src="https://img.shields.io/github/issues-pr-closed-raw/darkphoenix2601/M.V._PLAYER?color=success" /> </a>
+    <a href="https://github.com/darkphoenix2601/M.V._PLAYER" alt="GitHub release (latest by date including pre-releases)"> <img src="https://img.shields.io/github/v/release/darkphoenix2601/M.V._PLAYER?include_prereleases?style=flat&logo=github" /> </a>
+    <a href="https://github.com/darkphoenix2601/M.V._PLAYER" alt="Docker!"> <img src="https://aleen42.github.io/badges/src/docker.svg" /> </a>
+    <a href="https://github.com/darkphoenix2601/M.V._PLAYER/blob/master/LICENSE" alt="GPLv3 license"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" /> </a>
+    <a href="https://t.me/Miss_Akshi_updates" alt="Telegram!"> <img src="https://aleen42.github.io/badges/src/telegram.svg" /> </a>
+    <a href="https://discord.gg/nDD97pXBzK" alt="Discord"> <img src="https://img.shields.io/discord/465068856692441090?style=flat&logo=discord&color=blue" /> </a>
+    </p>
 
 ## 📊 Stats
 [![CodeFactor](https://www.codefactor.io/repository/github/darkphoenix2601/m.v._player/badge)](https://www.codefactor.io/repository/github/darkphoenix2601/m.v._player)
