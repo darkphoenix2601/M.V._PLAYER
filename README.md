@@ -13,7 +13,7 @@
     <a href="https://github.com/darkphoenix2601/M.V._PLAYER/network/members"> <img src="https://img.shields.io/github/stars/darkphoenix2601/M.V._PLAYER?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
     <a href="https://github.com/darkphoenix2601/M.V._PLAYER/graphs/contributors" alt="GitHub contributors"> <img src="https://img.shields.io/github/contributors/darkphoenix2601/M.V._PLAYER?style=flat&logo=github" /> </a>
     <a href="https://github.com/darkphoenix2601/M.V._PLAYER/pulls" alt="GitHub closed pull requests"> <img src="https://img.shields.io/github/issues-pr-closed-rawdarkphoenix2601/M.V._PLAYER?color=success" /> </a>
-    <a href="https://github.com/darkphoenix2601/M.V._PLAYER/releases" alt="GitHub release (latest by date including pre-releases)"> <img src="https://img.shields.io/github/v/releases/darkphoenix2601/M.V._PLAYER?include_prereleases?style=flat&logo=github" /> </a>
+    <a href="https://github.com/darkphoenix2601/M.V._PLAYER/releases" alt="GitHub release (latest by date including pre-releases)"> <img src="https://img.shields.io/github/releases/darkphoenix2601/M.V._PLAYER?include_prereleases?style=flat&logo=github" /> </a>
 </p>
 
 ## 📊 Stats
