@@ -14,8 +14,7 @@
 </p>
 
 ## 📊 Stats
-[![CodeFactor](https://www.codefactor.io/repository/github/darkphoenix2601/M.V._PLAYER/badge?s=2819e7433cdffbf7f3170b7a8234935da454d37b)](https://www.codefactor.io/repository/github/darkphoenix2601/M.V._PLAYER)
-
+[![CodeFactor](https://www.codefactor.io/repository/github/darkphoenix2601/m.v._player/badge)](https://www.codefactor.io/repository/github/darkphoenix2601/m.v._player)
 ## 🧪 Get `SESSION_NAME` from below:
 
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](http://t.me/String_generatorV1_bot) ``Pyrogram``
