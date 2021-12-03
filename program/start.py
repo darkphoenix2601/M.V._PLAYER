@@ -49,7 +49,7 @@ async def _human_time_duration(seconds):
 
 
 @Client.on_message(
-    command(["art", f"art@{BOT_USERNAME}"]) & filters.private & ~filters.edited
+    command(["start", f"art@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
 async def text_(client: Client, message: Message):
     await message.reply_text(
@@ -83,7 +83,7 @@ async def text_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/video-stream"
+                        "🌐 Source Code", url="https://github.com/darkphoenix2601/M.V._PLAYER"
                     )
                 ],
             ]
@@ -93,7 +93,7 @@ async def text_(client: Client, message: Message):
 
 
 @Client.on_message(
-    command(["ive", f"ive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
+    command(["alive", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
 )
 async def koko(client: Client, message: Message):
     current_time = datetime.utcnow()
@@ -120,15 +120,15 @@ async def koko(client: Client, message: Message):
     )
 
 
-@Client.on_message(command(["ng", f"ng@{BOT_USERNAME}"]) & ~filters.edited)
-async def pong(client: Client, message: Message):
+@Client.on_message(command(["ping", f"ng@{BOT_USERNAME}"]) & ~filters.edited)
+async def ping(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("pinging...")
     delta_ping = time() - start
     await m_reply.edit_text("🏓 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
 
 
-@Client.on_message(command(["ime", f"ime@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
 async def get_uptime(client: Client, message: Message):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
@@ -154,7 +154,7 @@ async def new_chat(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("quick setup guide", url="https://t.me/szteambots")
+                            InlineKeyboardButton("quick setup guide", url="https://t.me/Miss_Akshi_updates/16")
                         ]
                     ]
                 )
