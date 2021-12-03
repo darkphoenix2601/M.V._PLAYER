@@ -1,17 +1,33 @@
-<p align="center"><a href="https://t.me/Miss_Akshi2_0_bot"><img src="https://github.com/darkphoenix2601/M.V._PLAYER/blob/main/driver/Akshilogo.png"></a></p>
 <p align="center">
-    <br><b>Video Stream is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
+<a href="https://app.codacy.com/gh/darkphoenix2601/M.V._PLAYER?utm_source=github.com&utm_medium=referral&utm_content=darkphoenix2601/M.V._PLAYER&utm_campaign=Badge_Grade_Settings" alt="Codacy Badge">
+<img src="https://api.codacy.com/project/badge/Grade/6141417ceaf84545bab6bd671503df51" /> </a>
+<a href="https://github.com/darkphoenix2601/M.V._PLAYER" alt="Libraries.io dependency status for GitHub repo"> <img src="https://img.shields.io/librariesio/github/darkphoenix2601/M.V._PLAYER" /> </a>
+<a href="http://hits.dwyl.com/darkphoenix2601/M.V._PLAYER" alt="HitCount"> <img src="http://hits.dwyl.com/darkphoenix2601/M.V._PLAYER.svg" /> </a>
 </p>
 <p align="center">
-    <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>
-    <a href="https://github.com/darkphoenix2601/M.V._PLAYER/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-red.svg?style=flat-square" /></a>
-    <a href="https://app.codacy.com/gh/darkphoenix2601/M.V._PLAYER/dashboard"> <img src="https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=red&logo=codacy&style=flat-square" alt="Codacy" /></a><br>
-    <a href="https://github.com/darkphoenix2601/M.V._PLAYER"> <img src="https://img.shields.io/github/repo-size/darkphoenix2601/M.V._PLAYER?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
-    <a href="https://github.com/darkphoenix2601/M.V._PLAYER/commits/main"> <img src="https://img.shields.io/github/last-commit/darkphoenix2601/M.V._PLAYER?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
-    <a href="https://github.com/darkphoenix2601/M.V._PLAYER/issues"> <img src="https://img.shields.io/github/issues/darkphoenix2601/M.V._PLAYER?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
-    <a href="https://github.com/darkphoenix2601/M.V._PLAYER/network/members"> <img src="https://img.shields.io/github/forks/darkphoenix2601/M.V._PLAYER?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
-    <a href="https://github.com/darkphoenix2601/M.V._PLAYER/network/members"> <img src="https://img.shields.io/github/stars/darkphoenix2601/M.V._PLAYER?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
+<a href="https://github.com/darkphoenix2601/M.V._PLAYER" alt="GitHub closed issues"> <img src="https://img.shields.io/github/issues-closed-raw/darkphoenix2601/M.V._PLAYER?style=flat&logo=github&color=success" /> </a>
+<a href="https://github.com/darkphoenix2601/M.V._PLAYER" alt="GitHub commit activity"> <img src="https://img.shields.io/github/commit-activity/m/darkphoenix2601/M.V._PLAYER" /> </a>
+<a href="https://github.com/darkphoenix2601/M.V._PLAYER/graphs/contributors" alt="GitHub contributors"> <img src="https://img.shields.io/github/contributors/darkphoenix2601/M.V._PLAYER?style=flat&logo=github" /> </a>
+<a href="https://github.com/darkphoenix2601/M.V._PLAYER/network/members" alt="GitHub forks"> <img src="https://img.shields.io/github/forks/darkphoenix2601/M.V._PLAYER?label=Forks&logo=github" /> </a>
+<a href="https://github.com/darkphoenix2601/M.V._PLAYER" alt="GitHub closed pull requests"> <img src="https://img.shields.io/github/issues-pr-closed-raw/darkphoenix2601/M.V._PLAYER?color=success" /> </a>
+<a href="https://github.com/darkphoenix2601/M.V._PLAYER" alt="GitHub issues"> <img src="https://img.shields.io/github/issues-raw/darkphoenix2601/M.V._PLAYER?style=flat&logo=github&color=yellow" /> </a>
 </p>
+<p align="center">
+<a href="https://github.com/darkphoenix2601/M.V._PLAYER" alt="GitHub release (latest by date including pre-releases)"> <img src="https://img.shields.io/github/v/release/darkphoenix2601/M.V._PLAYER?include_prereleases?style=flat&logo=github" /> </a>
+<a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg?style=flat&logo=python&color=blue" /> </a>
+<a href="https://github.com/darkphoenix2601/M.V._PLAYER" alt="Docker!"> <img src="https://aleen42.github.io/badges/src/docker.svg" /> </a>
+<a href="https://github.com/darkphoenix2601/M.V._PLAYER" alt="GitHub repo size"> <img src="https://img.shields.io/github/repo-size/darkphoenix2601/M.V._PLAYER" /> </a>
+<a href="https://github.com/darkphoenix2601/M.V._PLAYER/blob/master/LICENSE" alt="GPLv3 license"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" /> </a>
+</p>
+<p align="center">
+<a href="https://ko-fi.com/sawada" alt="Donate!"> <img src="https://aleen42.github.io/badges/src/paypal.svg" /> </a>
+<a href="https://t.me/OnePunchUpdates" alt="Telegram!"> <img src="https://aleen42.github.io/badges/src/telegram.svg" /> </a>
+<a href="https://discord.animekaizoku.com" alt="Discord"> <img src="https://img.shields.io/discord/465068856692441090?style=flat&logo=discord&color=blue" /> </a>
+<a href="" alt="AnimeKaizoku"> <img src="https://img.shields.io/badge/Built%20by-Kaizoku-blue" /> </a>
+<a href="https://github.com/darkphoenix2601/M.V._PLAYER/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" /> </a>
+<a href="https://makeapullrequest.com" alt="PRs Welcome"> <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" /> </a>
+</p>
+
 
 ## 📊 Stats
 [![CodeFactor](https://www.codefactor.io/repository/github/darkphoenix2601/m.v._player/badge)](https://www.codefactor.io/repository/github/darkphoenix2601/m.v._player)
