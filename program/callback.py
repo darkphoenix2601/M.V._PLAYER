@@ -1,4 +1,4 @@
-# Copyright (C) 2021 By VeezMusicProject
+# Copyright (C) 2021 By M.V.PLAYER
 
 from driver.queues import QUEUE
 from pyrogram import Client, filters
