@@ -18,6 +18,8 @@
     <a href="https://github.com/darkphoenix2601/M.V._PLAYER/blob/master/LICENSE" alt="GPLv3 license"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" /> </a>
     <a href="https://t.me/Miss_Akshi_updates" alt="Telegram!"> <img src="https://aleen42.github.io/badges/src/telegram.svg" /> </a>
     <a href="https://discord.gg/nDD97pXBzK" alt="Discord"> <img src="https://img.shields.io/discord/465068856692441090?style=flat&logo=discord&color=blue" /> </a>
+    <a href="" alt="darkphoenix2601"> <img src="https://img.shields.io/badge/Built%20by-Darkphoenix-red" /> </a>
+    
     </p>
 
 ## 📊 Stats
