@@ -25,7 +25,7 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/darkphoenix2601/m.v._player/badge)](https://www.codefactor.io/repository/github/darkphoenix2601/m.v._player)
 ## 🧪 Get `SESSION_NAME` from below:
 
-[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@Darkphoenix2601/Pyrogram-String-Session#main.py) ``TYPE P ``
+[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@Darkphoenix2601/Pyrogram-String-Session) ``TYPE P ``
 
 ## 🎭 Preview
 <p align="center">
