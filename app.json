@@ -52,12 +52,12 @@
         "UPDATES_CHANNEL": {
             "description": "if you have channel, then fill the channel username here without @",
             "required": true,
-            "value": "https://t.me/Miss_Akshi_updates"
+            "value": "Miss_Akshi_updates"
         },
         "OWNER_NAME": {
             "description": "fill with your telegram account username without @",
             "required": true,
-            "value": "doreamon_music"
+            "value": "Professer_Ashu"
         },
         "ALIVE_NAME": {
             "description": "fill with your telegram account nickname/name",
