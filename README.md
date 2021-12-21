@@ -1,17 +1,8 @@
 
-[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@Darkphoenix2601/Pyrogram-String-Session) ``TYPE P ``
 
-## 🎭 Preview
-<p align="center">
-  <img src="https://telegra.ph/file/e655ecf0b489586c61d03.png">
-</p>
 
-## ✨ Features
-- Music & Video stream support
-- MultiChat support
-- Inline Search support
-- YouTube direct search support
-- YouTube/Local/Live/m3u8 stream support
+
+
 
 
 ## 🛠 Commands:
