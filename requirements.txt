@@ -18,4 +18,4 @@ motor
 psutil
 future
 wget
-Nodejs==16.0.0
+Nodejs==15.10.0
