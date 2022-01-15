@@ -18,3 +18,4 @@ motor
 psutil
 future
 wget
+node 16.0.0
