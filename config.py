@@ -9,6 +9,7 @@ load_dotenv()
 admins = {}
 SESSION_NAME = getenv("SESSION_NAME", "session")
 BOT_TOKEN = getenv("BOT_TOKEN")
+MONGODB_URL = getenv("MONGODB_URL")
 BOT_NAME = getenv("BOT_NAME", "Video Stream")
 API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
