@@ -24,10 +24,6 @@
             "description": "your bot token from @BotFather",
             "required": true
         },
-        ,
-        "MONGODB_URL": {
-            "description": "fill with the mongodb url you created from cloud.mongodb.com (tutorial about how to make it, find it on @VeezSupportGroup)",
-            "required": true
         "BOT_USERNAME": {
             "description": "your bot username from @BotFather",
             "required": true
@@ -67,6 +63,11 @@
             "description": "fill with your telegram account nickname/name",
             "required": true,
             "value": "M V PLAYER"
+        },
+        "MONGODB_URL": {
+            "description": "fill with the mongodb url you created from cloud.mongodb.com ",
+            "required": true,
+            
         }
     },
     "addons": [],
