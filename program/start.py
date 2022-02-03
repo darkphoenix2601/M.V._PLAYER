@@ -12,7 +12,7 @@ from config import (
     UPDATES_CHANNEL,
 )
 from program import __version__
-from driver.akshi import user
+from driver.Akshi import user
 from driver.filters import command, other_filters
 from driver.database.dbchat import add_served_chat, is_served_chat
 from driver.database.dbpunish import is_gbanned_user
