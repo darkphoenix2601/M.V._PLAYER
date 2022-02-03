@@ -8,9 +8,9 @@
       "video stream",
       "pyrogram"
   ],
-  "website": "https://t.me/Miss_Akshi_updates",
+  "website": "https://t.me/Professor_Ashu",
   "repository": "https://github.com/darkphoenix2601/M.V._PLAYER",
-  "success_url": "https://t.me/doreamon_music",
+  "success_url": "https://t.me/Professor_Ashu",
   "env": {
       "API_ID": {
           "description": "your API_ID from my.telegram.org",
@@ -47,17 +47,17 @@
       "GROUP_SUPPORT": {
           "description": "if you have group, then fill the group username here without @",
           "required": true,
-          "value": "Darkphoenix_Support"
+          "value": "Miss_AkshiV1_Support"
       },
       "UPDATES_CHANNEL": {
           "description": "if you have channel, then fill the channel username here without @",
           "required": true,
-          "value": "Miss_Akshi_updates"
+          "value": "Professor_Ashu"
       },
       "OWNER_NAME": {
           "description": "fill with your telegram account username without @",
           "required": true,
-          "value": "Professer_Ashu"
+          "value": "Professor_Ashu"
       },
       "ALIVE_NAME": {
           "description": "fill with your telegram account nickname/name",
