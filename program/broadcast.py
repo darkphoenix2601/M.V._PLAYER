@@ -12,7 +12,7 @@ from program import __version__ as ver
 from program.start import __python_version__ as pyver
 
 from driver.filters import command
-from driver.decorators import  sudo_users_only
+from driver.decorators import bot_creator, sudo_users_only
 from driver.database.dbchat import get_served_chats
 from driver.database.dbusers import get_served_users
 from driver.database.dbpunish import get_gbans_count
