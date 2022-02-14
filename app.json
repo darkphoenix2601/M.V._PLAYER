@@ -64,6 +64,12 @@
           "required": true,
           "value": "M V PLAYER"
       },
+      
+      "OWNER_ID": {
+          "description": "fill with your own telegram id, this is needed because there's any feature that only can be used by bot owner ",
+          "required": true
+          
+      },
       "MONGODB_URL": {
           "description": "fill with the mongodb url you created from cloud.mongodb.com ",
           "required": true
