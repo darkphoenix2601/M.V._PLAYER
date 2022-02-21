@@ -1,5 +1,9 @@
 import os
+import re
 import sys
+import asyncio
+import subprocess
+from asyncio import sleep
 
 from git import Repo
 from pyrogram.types import Message
@@ -9,6 +13,7 @@ from os import system, execle, environ
 from driver.decorators import sudo_users_only
 from git.exc import InvalidGitRepositoryError
 from config import UPSTREAM_REPO, BOT_USERNAME
+
 
 
 def gen_chlog(repo, diff):
@@ -57,10 +62,10 @@ async def update_repo(_, message: Message):
     update_avail = updater()
     if update_avail:
         await msg.edit("✅ update finished\n\n• bot restarted, back active again in 1 minutes.")
-        system("git pull -f && pip3 install -r requirements.txt")
+        system("git pull -f && pip3 install --no-cache-dir -r requirements.txt")
         execle(sys.executable, sys.executable, "main.py", environ)
         return
-    await msg.edit("bot is **up-to-date** with [main](https://github.com/darkphoenix2601/M.V._PLAYER)", disable_web_page_preview=True)
+    await msg.edit(f"bot is **up-to-date** with [main]({UPSTREAM_REPO}/tree/main)", disable_web_page_preview=True)
 
 
 @Client.on_message(command(["restart", f"restart@{BOT_USERNAME}"]) & ~filters.edited)

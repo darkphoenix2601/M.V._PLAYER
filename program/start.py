@@ -15,7 +15,7 @@ from program import __version__
 from driver.Akshi import user
 from driver.filters import command, other_filters
 from pyrogram import Client, filters
-from program import __version__ as pyrover
+from pyrogram import __version__ as pyrover
 from pytgcalls import (__version__ as pytover)
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
@@ -49,13 +49,15 @@ async def _human_time_duration(seconds):
 
 
 @Client.on_message(
-    command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
+    command(["oooooooooooooooooooooooooooooooooooooooooooot", f"art@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
 async def text_(client: Client, message: Message):
     await message.reply_text(
         f"""✨ **Welcome {message.from_user.mention()} !**\n
 💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Allows you to play music and video on groups through the new Telegram's video chats!**
+
 💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
+
 🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**
 """,
         reply_markup=InlineKeyboardMarkup(
@@ -89,7 +91,7 @@ async def text_(client: Client, message: Message):
         disable_web_page_preview=True,
     )
 @Client.on_message(
-    command(["alive", f"alive@{BOT_USERNAME}"]) & filters.private & ~filters.edited
+    command(["kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk", f"alive@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
 async def alive(client: Client, message: Message):
     current_time = datetime.utcnow()
@@ -116,7 +118,7 @@ async def alive(client: Client, message: Message):
     )
 
 
-@Client.on_message(command(["ping", f"ng@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["ding", f"ng@{BOT_USERNAME}"]) & ~filters.edited)
 async def ping(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("pinging...")
