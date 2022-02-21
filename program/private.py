@@ -45,7 +45,7 @@ async def _human_time_duration(seconds):
         amount, seconds = divmod(int(seconds), div)
         if amount > 0:
             parts.append("{} {}{}".format(amount, unit, "" if amount == 1 else "s"))
-    return ", ".join(parts):
+    return ", ".join(parts)
     await message.reply_photo(
         photo=f"https://telegra.ph/file/38ca11b0fb33d6d9cf472.jpg",
         caption=f"""**━━━━━━━━━━━━━━━━━━
