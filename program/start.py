@@ -1,3 +1,5 @@
+from datetime import datetime
+from sys import version_info
 from time import time
 
 from config import (
@@ -19,7 +21,8 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 __major__ = 0
 __minor__ = 2
-	@@ -26,9 +26,9 @@
+__micro__ = 1
+
 __python_version__ = f"{version_info[0]}.{version_info[1]}.{version_info[2]}"
 
 
@@ -29,7 +32,12 @@ TIME_DURATION_UNITS = (
     ("week", 60 * 60 * 24 * 7),
     ("day", 60 * 60 * 24),
     ("hour", 60 * 60),
-	@@ -41,118 +41,117 @@ async def _human_time_duration(seconds):
+    ("min", 60),
+    ("sec", 1),
+)
+
+
+async def _human_time_duration(seconds):
     if seconds == 0:
         return "inf"
     parts = []
@@ -58,7 +66,7 @@ async def text_(client: Client, message: Message):
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-
+                
                 [
                     InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
                     InlineKeyboardButton("❤️ Donate", url=f"https://t.me/{OWNER_NAME}"),
@@ -146,3 +154,4 @@ async def new_chat(c: Client, m: Message):
                         ]
                     ]
                 )
+            )
