@@ -49,7 +49,7 @@ async def _human_time_duration(seconds):
 
 
 @Client.on_message(
-    command(["start", f"start@voidvcbot"]) & filters.private & ~filters.edited
+    command(["void", f"start/t.me/voidvcbot"]) & filters.private & ~filters.edited
 )
 async def text_(client: Client, message: Message):
     await message.reply_text(
