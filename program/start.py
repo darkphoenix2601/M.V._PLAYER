@@ -15,7 +15,7 @@ from program import __version__
 from driver.Akshi import user
 from driver.filters import command, other_filters
 from pyrogram import Client, filters
-from pyrogram import __version__ as pyrover
+from program import __version__ as pyrover
 from pytgcalls import (__version__ as pytover)
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
