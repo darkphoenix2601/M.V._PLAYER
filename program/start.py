@@ -49,7 +49,7 @@ async def _human_time_duration(seconds):
 
 
 @Client.on_message(
-    command(["void", f"start/t.me/voidvcbot"]) & filters.private & ~filters.edited
+    command(["start", f"start/t.me/voidvcbot"]) & filters.private & ~filters.edited
 )
 async def text_(client: Client, message: Message):
     await message.reply_text(
@@ -116,7 +116,7 @@ async def alive(client: Client, message: Message):
     )
 
 
-@Client.on_message(command(["ping", f"ng@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["ping", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
 async def ping(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("pinging...")
