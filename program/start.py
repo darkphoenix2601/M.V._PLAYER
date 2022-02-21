@@ -49,7 +49,7 @@ async def _human_time_duration(seconds):
 
 
 @Client.on_message(
-    command(["oooooooooooooooooooooooooooooooooooooooooooot", f"art@{BOT_USERNAME}"]) & filters.private & ~filters.edited
+    command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
 async def text_(client: Client, message: Message):
     await message.reply_text(
@@ -91,7 +91,7 @@ async def text_(client: Client, message: Message):
         disable_web_page_preview=True,
     )
 @Client.on_message(
-    command(["kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk", f"alive@{BOT_USERNAME}"]) & filters.private & ~filters.edited
+    command(["alive", f"alive@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
 async def alive(client: Client, message: Message):
     current_time = datetime.utcnow()
@@ -118,7 +118,7 @@ async def alive(client: Client, message: Message):
     )
 
 
-@Client.on_message(command(["ding", f"ng@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["ping", f"ng@{BOT_USERNAME}"]) & ~filters.edited)
 async def ping(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("pinging...")
