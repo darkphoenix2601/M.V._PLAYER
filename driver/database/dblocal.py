@@ -5,4 +5,4 @@ from config import MONGODB_URL as tmo
 
 
 MONGODB_CLI = Bot(tmo)
-db = MONGODB_CLI 
+db = MONGODB_CLI.program

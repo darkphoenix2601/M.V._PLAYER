@@ -1,20 +1,40 @@
-import os
+"""
+Video + Music Stream Telegram Bot
+Copyright (c) 2022-present levina=lab <https://github.com/levina-lab>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but without any warranty; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/licenses.html>
+"""
+
+
 import re
 import sys
-import shutil
 import subprocess
 import traceback
 
 from time import time
 from io import StringIO
-from sys import version as pyver
 from inspect import getfullargspec
 
 from config import BOT_USERNAME as bname
-from driver.Akshi import bot
+from driver.core import bot
+from driver.queues import QUEUE
 from driver.filters import command
+from driver.database.dbchat import remove_served_chat
+from driver.decorators import bot_creator, sudo_users_only, errors
+from driver.utils import remove_if_exists
+
 from pyrogram import Client, filters
-from driver.decorators import sudo_users_only, errors
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 
 
@@ -73,7 +93,7 @@ async def executor(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="⏳", callback_data=f"runtime {t2-t1} Seconds"
+                        text="⏳", callback_data=f"runtime {t2-t1} seconds"
                     )
                 ]
             ]
@@ -85,7 +105,7 @@ async def executor(client, message):
             reply_markup=keyboard,
         )
         await message.delete()
-        os.remove(filename)
+        remove_if_exists(filename)
     else:
         t2 = time()
         keyboard = InlineKeyboardMarkup(
@@ -93,7 +113,7 @@ async def executor(client, message):
                 [
                     InlineKeyboardButton(
                         text="⏳",
-                        callback_data=f"runtime {round(t2-t1, 3)} Seconds",
+                        callback_data=f"runtime {round(t2-t1, 3)} seconds",
                     )
                 ]
             ]
@@ -111,7 +131,7 @@ async def runtime_func_cq(_, cq):
 @sudo_users_only
 async def shellrunner(client, message):
     if len(message.command) < 2:
-        return await edit_or_reply(message, text="**usage:**\n\n» /sh git pull")
+        return await edit_or_reply(message, text="**usage:**\n\n» /sh echo hello world")
     text = message.text.split(None, 1)[1]
     if "\n" in text:
         code = text.split("\n")
@@ -126,7 +146,7 @@ async def shellrunner(client, message):
                 )
             except Exception as err:
                 print(err)
-                await edit_or_reply(message, text=f"`ERROR:`\n```{err}```")
+                await edit_or_reply(message, text=f"`ERROR:`\n\n```{err}```")
             output += f"**{code}**\n"
             output += process.stdout.read()[:-1].decode("utf-8")
             output += "\n"
@@ -149,7 +169,7 @@ async def shellrunner(client, message):
                 tb=exc_tb,
             )
             return await edit_or_reply(
-                message, text=f"`ERROR:`\n```{''.join(errors)}```"
+                message, text=f"`ERROR:`\n\n```{''.join(errors)}```"
             )
         output = process.stdout.read()[:-1].decode("utf-8")
     if str(output) == "\n":
@@ -164,25 +184,29 @@ async def shellrunner(client, message):
                 reply_to_message_id=message.message_id,
                 caption="`OUTPUT`",
             )
-            return os.remove("output.txt")
-        await edit_or_reply(message, text=f"`OUTPUT:`\n```{output}```")
+            return remove_if_exists("output.txt")
+        await edit_or_reply(message, text=f"`OUTPUT:`\n\n```{output}```")
     else:
-        await edit_or_reply(message, text="`OUTPUT:`\n`no output`")
+        await edit_or_reply(message, text="`OUTPUT:`\n\n`no output`")
 
 
 @Client.on_message(command(["leavebot", f"leavebot{bname}"]) & ~filters.edited)
-@sudo_users_only
+@bot_creator
 async def bot_leave_group(_, message):
     if len(message.command) != 2:
         await message.reply_text(
-            "**usage:**\n\n» /leavebot [chat id]"
+            "**usage:**\n\n» /leavebot (`chat_id`)"
         )
         return
     chat = message.text.split(None, 2)[1]
+    if chat in QUEUE:
+        await remove_active_chat(chat)
+        return
     try:
         await bot.leave_chat(chat)
+        await user.leave_chat(chat)
+        await remove_served_chat(chat)
     except Exception as e:
         await message.reply_text(f"❌ procces failed\n\nreason: `{e}`")
-        print(e)
         return
     await message.reply_text(f"✅ Bot successfully left from the Group:\n\n💭 » `{chat}`")

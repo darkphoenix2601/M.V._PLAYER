@@ -1,25 +1,44 @@
+"""
+Video + Music Stream Telegram Bot
+Copyright (c) 2022-present levina=lab <https://github.com/levina-lab>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but without any warranty; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/licenses.html>
+"""
+
+
 import os
-import re
 import sys
-import asyncio
-import subprocess
-from asyncio import sleep
 
 from git import Repo
-from pyrogram.types import Message
-from driver.filters import command
-from pyrogram import Client, filters
 from os import system, execle, environ
-from driver.decorators import sudo_users_only
 from git.exc import InvalidGitRepositoryError
+
+from pyrogram.types import Message
+from pyrogram import Client, filters
+
+from program import LOGS
 from config import UPSTREAM_REPO, BOT_USERNAME
 
+from driver.filters import command
+from driver.decorators import bot_creator
 
 
 def gen_chlog(repo, diff):
     upstream_repo_url = Repo().remotes[0].config_reader.get("url").replace(".git", "")
     ac_br = repo.active_branch.name
-    ch_log = tldr_log = ""
+    ch_log = ""
+    tldr_log = ""
     ch = f"<b>updates for <a href={upstream_repo_url}/tree/{ac_br}>[{ac_br}]</a>:</b>"
     ch_tl = f"updates for {ac_br}:"
     d_form = "%d/%m/%y || %H:%M"
@@ -55,24 +74,27 @@ def updater():
 
 
 @Client.on_message(command(["update", f"update@{BOT_USERNAME}"]) & ~filters.edited)
-@sudo_users_only
-async def update_repo(_, message: Message):
+@bot_creator
+async def update_bot(_, message: Message):
     chat_id = message.chat.id
-    msg = await message.reply("🔄 `processing update...`")
+    msg = await message.reply("❖ Checking updates...")
     update_avail = updater()
     if update_avail:
-        await msg.edit("✅ update finished\n\n• bot restarted, back active again in 1 minutes.")
+        await msg.edit("✅ Update finished !\n\n• Bot restarting, back active again in 1 minutes.")
         system("git pull -f && pip3 install --no-cache-dir -r requirements.txt")
         execle(sys.executable, sys.executable, "main.py", environ)
         return
-    await msg.edit(f"bot is **up-to-date** with [main]({UPSTREAM_REPO}/tree/main)", disable_web_page_preview=True)
+    await msg.edit(f"❖ bot is **up-to-date** with [main]({UPSTREAM_REPO}/tree/main) ❖", disable_web_page_preview=True)
 
 
 @Client.on_message(command(["restart", f"restart@{BOT_USERNAME}"]) & ~filters.edited)
-@sudo_users_only
+@bot_creator
 async def restart_bot(_, message: Message):
-    msg = await message.reply("`restarting bot...`")
-    args = [sys.executable, "main.py"]
-    await msg.edit("✅ bot restarted\n\n• now you can use this bot again.")
-    execle(sys.executable, *args, environ)
-    return
+    try:
+        msg = await message.reply_text("❖ Restarting bot...")
+        LOGS.info("[INFO]: BOT SERVER RESTARTED !!")
+    except BaseException as err:
+        LOGS.info(f"[ERROR]: {err}")
+        return
+    await msg.edit_text("✅ Bot has restarted !\n\n» back active again in 5-10 seconds.")
+    os.system(f"kill -9 {os.getpid()} && python3 main.py")
